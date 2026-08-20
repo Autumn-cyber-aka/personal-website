@@ -3,224 +3,111 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="一名计算机科学本科生的个人网站，展示学习经历、技术技能和项目作品。"
-    >
-    <meta name="theme-color" content="#0b1120">
-    <title>你的名字｜计算机科学本科生</title>
+    <meta name="description" content="计算机科学本科生个人主页，包含个人介绍、技能、项目和联系方式。">
+    <title>你的名字｜个人主页</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">跳到主要内容</a>
 
-    <header class="site-header" data-header>
-      <div class="nav-container">
-        <a class="brand" href="#home" aria-label="返回首页">
-          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
-          <span>你的名字</span>
-        </a>
-
-        <button
-          class="menu-button"
-          type="button"
-          aria-label="打开导航菜单"
-          aria-expanded="false"
-          aria-controls="site-navigation"
-          data-menu-button
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="#home">你的名字</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">打开导航菜单</span>
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
         </button>
-
-        <nav id="site-navigation" class="site-nav" aria-label="主要导航" data-navigation>
-          <a href="#home">首页</a>
-          <a href="#about">关于</a>
-          <a href="#skills">技能</a>
-          <a href="#projects">项目</a>
-          <a href="#contact">联系</a>
+        <nav id="site-nav" class="site-nav" aria-label="主要导航">
+          <a href="#home">首页</a><a href="#about">关于我</a><a href="#skills">技能</a><a href="#projects">项目</a><a href="#contact">联系</a>
         </nav>
       </div>
     </header>
 
-    <main id="main-content">
-      <section id="home" class="hero section" aria-labelledby="hero-title">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow"><span></span> Hello, world!</p>
-            <h1 id="hero-title">你好，我是<span>你的名字</span></h1>
-            <p class="hero-role">计算机科学本科生</p>
-            <p class="hero-description">
-              我正在学习软件开发、算法与 Web 技术，喜欢把课堂知识转化为真正可以运行的项目。
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projects">查看项目</a>
-              <a class="button button-secondary" href="#contact">联系我</a>
-            </div>
-            <ul class="quick-facts" aria-label="个人概况">
-              <li><span aria-hidden="true">01</span> 持续学习</li>
-              <li><span aria-hidden="true">02</span> 乐于实践</li>
-              <li><span aria-hidden="true">03</span> 开放协作</li>
-            </ul>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="code-window">
-              <div class="window-bar">
-                <i></i><i></i><i></i>
-                <span>profile.js</span>
-              </div>
-              <pre><code><span class="code-keyword">const</span> student = {
-  major: <span class="code-string">"Computer Science"</span>,
-  interests: [
-    <span class="code-string">"Software Development"</span>,
-    <span class="code-string">"Problem Solving"</span>,
-    <span class="code-string">"Open Source"</span>
-  ],
-  status: <span class="code-string">"Keep building"</span>
-};</code></pre>
-            </div>
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
+    <main id="main-content" class="page">
+      <section id="home" class="profile-section" aria-labelledby="profile-name">
+        <div class="portrait" role="img" aria-label="个人头像占位图"><span>照片</span></div>
+        <div class="profile-content">
+          <h1 id="profile-name">你的名字</h1>
+          <p class="name-en">Your Name</p>
+          <p class="role">计算机科学本科生 · 你的学校</p>
+          <p class="intro">你好！我目前正在学习计算机科学，关注软件开发、Web 技术和算法。我喜欢通过实际项目理解课堂知识，也在持续寻找值得深入探索的方向。</p>
+          <div class="profile-links" aria-label="个人链接">
+            <a href="mailto:hello@example.com">Email</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#projects">Projects</a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section section-muted" aria-labelledby="about-title">
-        <div class="container about-grid">
-          <div>
-            <p class="section-kicker">01 / ABOUT</p>
-            <h2 id="about-title">关于我</h2>
-            <p class="section-lead">
-              我是一名计算机科学本科生，目前专注于夯实编程基础，并通过课程与个人项目探索技术如何解决实际问题。
-            </p>
-            <p class="body-copy">
-              我重视清晰的逻辑、可靠的实现和持续的复盘。除了完成课程学习，我也会主动阅读技术资料、使用 Git 记录开发过程，并尝试将新知识应用到小型作品中。
-            </p>
-          </div>
+      <section id="about" class="content-section" aria-labelledby="about-title">
+        <h2 id="about-title">关于我</h2>
+        <div class="prose">
+          <p>我是一名计算机科学本科生，目前主要学习程序设计、数据结构与算法、计算机系统和 Web 开发。相比只停留在概念上，我更愿意通过编写小程序和完成项目来验证自己的理解。</p>
+          <p>我希望逐步建立扎实的工程基础，学习如何写出结构清楚、易于维护的代码，并通过 GitHub 记录自己的学习过程。课余时间，我也会阅读技术文章、练习算法并尝试新的开发工具。</p>
+        </div>
+        <dl class="facts">
+          <div><dt>学校</dt><dd>你的学校</dd></div>
+          <div><dt>专业</dt><dd>计算机科学与技术</dd></div>
+          <div><dt>关注方向</dt><dd>软件开发、Web 技术、算法</dd></div>
+          <div><dt>当前状态</dt><dd>持续学习中</dd></div>
+        </dl>
+      </section>
 
-          <dl class="profile-list">
-            <div><dt>学校</dt><dd>你的学校</dd></div>
-            <div><dt>专业</dt><dd>计算机科学与技术</dd></div>
-            <div><dt>当前方向</dt><dd>软件开发 / Web / 算法</dd></div>
-            <div><dt>目前状态</dt><dd><span class="status-dot"></span>开放学习与交流</dd></div>
-          </dl>
+      <section id="skills" class="content-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">技能</h2>
+        <div class="skill-groups">
+          <article><h3>编程语言</h3><p>Python、C / C++、Java、JavaScript</p></article>
+          <article><h3>Web 开发</h3><p>HTML、CSS、响应式设计、基础 DOM 操作</p></article>
+          <article><h3>工具与环境</h3><p>Git、GitHub、VS Code、Linux</p></article>
+          <article><h3>正在学习</h3><p>数据结构与算法、数据库、后端开发</p></article>
         </div>
       </section>
 
-      <section id="skills" class="section" aria-labelledby="skills-title">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">02 / SKILLS</p>
-              <h2 id="skills-title">技能与工具</h2>
+      <section id="projects" class="content-section" aria-labelledby="projects-title">
+        <div class="section-title-row"><h2 id="projects-title">项目</h2><p>课程作业与个人实践</p></div>
+        <div class="project-list">
+          <article class="project-item">
+            <div class="project-image project-image-blue" aria-hidden="true">01</div>
+            <div class="project-body">
+              <h3>个人网站</h3>
+              <p>使用原生 HTML、CSS 和 JavaScript 制作的响应式个人主页，用于整理个人介绍、学习技能和项目经历。</p>
+              <p class="project-meta">HTML · CSS · JavaScript</p>
+              <p class="project-status">项目链接将在发布后补充</p>
             </div>
-            <p>按实际使用场景分类，不用百分比夸大熟练程度。</p>
-          </div>
-
-          <div class="skills-grid">
-            <article class="skill-card">
-              <span class="card-index">01</span>
-              <h3>编程基础</h3>
-              <p>用于课程学习、算法练习与解决问题。</p>
-              <ul class="tag-list">
-                <li>Python</li><li>C / C++</li><li>Java</li>
-              </ul>
-            </article>
-            <article class="skill-card">
-              <span class="card-index">02</span>
-              <h3>Web 开发</h3>
-              <p>能够制作结构清晰、适配多设备的网页。</p>
-              <ul class="tag-list">
-                <li>HTML</li><li>CSS</li><li>JavaScript</li>
-              </ul>
-            </article>
-            <article class="skill-card">
-              <span class="card-index">03</span>
-              <h3>开发工具</h3>
-              <p>用于版本管理、开发调试和日常协作。</p>
-              <ul class="tag-list">
-                <li>Git</li><li>GitHub</li><li>VS Code</li><li>Linux</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section section-muted" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">03 / PROJECTS</p>
-              <h2 id="projects-title">项目作品</h2>
+          </article>
+          <article class="project-item">
+            <div class="project-image project-image-green" aria-hidden="true">02</div>
+            <div class="project-body">
+              <h3>课程项目名称</h3>
+              <p>在这里介绍项目解决的问题、你负责的部分，以及最终完成的主要功能。真实而具体的两三句话就足够。</p>
+              <p class="project-meta">技术一 · 技术二</p>
+              <p class="project-status">请替换为真实项目资料</p>
             </div>
-            <p>这里将展示课程项目、个人练习和持续完善中的作品。</p>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-cover cover-one">
-                <span>01</span><strong>WEB PROJECT</strong>
-              </div>
-              <div class="project-content">
-                <div class="project-title-row"><h3>个人网站</h3><span>进行中</span></div>
-                <p>使用原生前端技术构建的响应式个人主页，用于整理学习经历、技术技能和项目成果。</p>
-                <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-                <p class="project-note">源码链接将在 GitHub 仓库发布后补充。</p>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-cover cover-two">
-                <span>02</span><strong>COURSE PROJECT</strong>
-              </div>
-              <div class="project-content">
-                <div class="project-title-row"><h3>课程项目名称</h3><span>待补充</span></div>
-                <p>在这里介绍项目解决的问题、你负责的工作，以及最终实现的主要功能或学习成果。</p>
-                <ul class="tag-list"><li>技术一</li><li>技术二</li></ul>
-                <p class="project-note">替换为你的真实项目后添加源码或演示链接。</p>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-cover cover-three">
-                <span>03</span><strong>PERSONAL BUILD</strong>
-              </div>
-              <div class="project-content">
-                <div class="project-title-row"><h3>个人项目名称</h3><span>待补充</span></div>
-                <p>可以展示一个你真正感兴趣的小工具、算法实践、小游戏或其他可以运行的作品。</p>
-                <ul class="tag-list"><li>技术一</li><li>技术二</li></ul>
-                <p class="project-note">项目资料准备好后再启用对外链接。</p>
-              </div>
-            </article>
-          </div>
+          </article>
+          <article class="project-item">
+            <div class="project-image project-image-gray" aria-hidden="true">03</div>
+            <div class="project-body">
+              <h3>个人练习项目</h3>
+              <p>可以放一个算法可视化、小工具、小游戏或其他能够体现学习过程的作品，并说明从中解决了什么问题。</p>
+              <p class="project-meta">技术一 · 技术二</p>
+              <p class="project-status">请替换为真实项目资料</p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-        <div class="container contact-panel">
-          <div>
-            <p class="section-kicker">04 / CONTACT</p>
-            <h2 id="contact-title">保持联系</h2>
-            <p>如果你想交流学习、讨论项目或一起做些有意思的事情，欢迎通过下面的方式联系我。</p>
-          </div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:hello@example.com">发送邮件</a>
-            <a class="button button-secondary" href="https://github.com/" target="_blank" rel="noopener noreferrer">访问 GitHub</a>
-            <p class="replace-note">发布前请替换为你的真实邮箱和 GitHub 地址。</p>
-          </div>
-        </div>
+      <section id="contact" class="content-section contact-section" aria-labelledby="contact-title">
+        <h2 id="contact-title">联系方式</h2>
+        <p>如果你想交流学习经验、讨论项目或提供建议，欢迎通过邮件或 GitHub 联系我。</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/your-name</a></li>
+        </ul>
+        <p class="edit-note">发布前请将以上内容替换为你的真实联系方式。</p>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span data-year></span> 你的名字</p>
-        <p>使用 HTML、CSS 和 JavaScript 构建</p>
-      </div>
-    </footer>
+    <footer class="site-footer"><p>© <span data-year></span> 你的名字 · 使用 HTML、CSS 和 JavaScript 构建</p></footer>
   </body>
 </html>
