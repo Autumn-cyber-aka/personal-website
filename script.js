@@ -7,12 +7,19 @@ function closeMenu() {
   if (!menuButton || !navigation) return;
   menuButton.setAttribute('aria-expanded', 'false');
   navigation.classList.remove('open');
+  updateMenuLabel(false);
+}
+
+function updateMenuLabel(open) {
+  const label = menuButton?.querySelector('.sr-only');
+  if (label) label.textContent = open ? 'Close navigation menu' : 'Open navigation menu';
 }
 
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!open));
   navigation?.classList.toggle('open', !open);
+  updateMenuLabel(!open);
 });
 
 navigationLinks.forEach((link) => link.addEventListener('click', closeMenu));
