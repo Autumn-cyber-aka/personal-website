@@ -20,12 +20,8 @@ Then visit `http://localhost:8000`.
 
 Replace the following placeholder content in `index.html`:
 
-- `Your Name`
 - Your personal introduction and skills
 - The names, descriptions, and technology stacks of the project entries
-- `hello@example.com`
-- `https://github.com/` and `github.com/your-name`
-- The `Photo` placeholder, which can be replaced with an `<img>` element
 
 Do not add empty project links. When real links are available, use clear labels such as `Code` and `Demo`.
 
@@ -35,6 +31,7 @@ Do not add empty project links. When real links are available, use clear labels 
 - `styles.css`: Typography, visual styles, and responsive layout
 - `script.js`: Mobile navigation and active-section state
 - `README.md`: Maintenance and deployment notes
+- `assets/profile.png`: Profile photograph
 
 ## Deployment
 

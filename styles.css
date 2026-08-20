@@ -106,14 +106,13 @@ a:hover { color: #163f70; }
 
 .portrait {
   width: 190px;
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-items: center;
-  color: #7b828a;
+  height: 190px;
+  display: block;
   border: 1px solid #d8dce1;
   border-radius: 50%;
   background: #eef0f2;
-  font-size: 0.86rem;
+  object-fit: cover;
+  object-position: center 30%;
 }
 
 h1, h2, h3, p { overflow-wrap: break-word; }
@@ -126,7 +125,6 @@ h1 {
   line-height: 1.15;
 }
 
-.name-en { margin: 2px 0 14px; color: var(--muted); font-family: var(--serif); font-size: 1.08rem; }
 .role { margin: 0 0 14px; font-weight: 600; }
 .intro { max-width: 600px; margin: 0; color: #41474f; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 20px; }
@@ -220,7 +218,7 @@ h3 { margin: 0; font-size: 1.04rem; line-height: 1.5; }
   .site-nav a { min-height: 44px; display: flex; align-items: center; padding: 0 8px; border-bottom: 1px solid var(--border); }
   .site-nav a:last-child { border-bottom: 0; }
   .profile-section { min-height: 0; grid-template-columns: 1fr; gap: 25px; padding: 45px 0; }
-  .portrait { width: 135px; }
+  .portrait { width: 135px; height: 135px; }
   .content-section { padding: 40px 0; }
   .facts, .skill-groups { grid-template-columns: 1fr; }
   .facts { gap: 0; }
