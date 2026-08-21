@@ -13,103 +13,90 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="site-name" href="#home">Jianchen Lyu</a>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="sr-only">Open navigation menu</span>
-          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content" class="page">
-      <section id="home" class="profile-section" aria-labelledby="profile-name">
+    <div class="site-shell">
+      <header id="home" class="profile-sidebar" aria-labelledby="profile-name">
         <img class="portrait" src="assets/profile.png" alt="Portrait of Jianchen Lyu" width="1500" height="2100">
-        <div class="profile-content">
+        <div class="profile-copy">
           <h1 id="profile-name">Jianchen Lyu</h1>
-          <p class="role">Computer Science Undergraduate · Columbia University</p>
-          <p class="intro">I am a sophomore at Columbia University studying Computer Science. I am interested in building intelligent systems that learn from multiple forms of information and improve through continued interaction and feedback.</p>
-          <div class="profile-links" aria-label="Profile links">
-            <a href="mailto:lyujianchen182@gmail.com">Email</a>
-            <a href="https://github.com/Autumn-cyber-aka" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#projects">Projects</a>
+          <p class="role">Computer Science Undergraduate</p>
+          <p class="institution">Columbia University</p>
+          <a class="email-link" href="mailto:lyujianchen182@gmail.com">lyujianchen182@gmail.com</a>
+        </div>
+
+        <div class="profile-links" aria-label="Profile links">
+          <a href="mailto:lyujianchen182@gmail.com">Email</a>
+          <a href="https://github.com/Autumn-cyber-aka" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page">
+        <section id="about" class="content-section about-section" aria-labelledby="about-title">
+          <p class="eyebrow">Hello, I’m Jianchen</p>
+          <h2 id="about-title">About Me</h2>
+          <div class="prose">
+            <p>I am a second-year undergraduate student at <strong>Columbia University</strong>, where I study Computer Science. I am currently building a foundation in programming, data structures and algorithms, computer systems, and machine learning through coursework and independent projects.</p>
+            <p>Currently, I am working on <strong>reasoning-aware visual representations for vision-language model agents</strong>, exploring how models can dynamically re-encode visual inputs as their reasoning evolves and use internal feedback to refine perception.</p>
+            <p>More broadly, I am interested in <strong>multimodal learning</strong>, <strong>self-improving agents</strong>, and <strong>continual learning</strong>—especially systems that can adapt their knowledge and behavior over time while remaining grounded in the environment.</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="about" class="content-section" aria-labelledby="about-title">
-        <h2 id="about-title">About Me</h2>
-        <div class="prose">
-          <p>I am a second-year undergraduate student at Columbia University, where I study Computer Science. I am currently building a foundation in programming, data structures and algorithms, computer systems, and machine learning through coursework and independent projects.</p>
-          <p>My research interests lie in <strong>multimodal learning</strong> and <strong>self-evolving agents</strong>. I am particularly curious about how agents can integrate language, vision, and other forms of feedback, then adapt their reasoning and behavior over time. I am always open to learning, collaboration, and conversations about these areas.</p>
-        </div>
-        <dl class="facts">
-          <div><dt>University</dt><dd>Columbia University</dd></div>
-          <div><dt>Program</dt><dd>Computer Science, Sophomore</dd></div>
-          <div><dt>Interests</dt><dd>Multimodal Learning, Self-Evolving Agents</dd></div>
-          <div><dt>Status</dt><dd>Learning and building</dd></div>
-        </dl>
-      </section>
+        <section id="experience" class="content-section" aria-labelledby="experience-title">
+          <div class="section-title-row">
+            <h2 id="experience-title">Experience</h2>
+            <p>Education and research</p>
+          </div>
+          <div class="experience-list">
+            <article class="experience-item">
+              <img class="experience-mark" src="assets/columbia-seal.png" alt="Columbia University seal" width="250" height="249">
+              <div class="experience-body">
+                <div class="experience-heading">
+                  <h3>Columbia University</h3>
+                  <p class="experience-date">Expected 2029</p>
+                </div>
+                <p class="experience-location">New York, NY</p>
+                <p>Undergraduate Student, Computer Science</p>
+                <p class="experience-detail"><strong>Advanced coursework:</strong> Numerical Methods, Stochastic Processes, Time Series Analysis, Computer Vision, and Continual Learning.</p>
+              </div>
+            </article>
+            <article class="experience-item">
+              <img class="experience-mark" src="assets/uiuc-block-i.svg" alt="Block I in Illini orange">
+              <div class="experience-body">
+                <div class="experience-heading">
+                  <h3>University of Illinois Urbana-Champaign</h3>
+                  <p class="experience-date">Jan 2026 – Aug 2026</p>
+                </div>
+                <p class="experience-location">Urbana-Champaign, IL</p>
+                <p>Research Intern</p>
+                <p class="experience-detail">Advised by <a href="https://ece.illinois.edu/about/directory/faculty/kindrtnk" target="_blank" rel="noopener noreferrer">Prof. Volodymyr Kindratenko</a> and collaborated with <a href="https://ece.illinois.edu/about/directory/grad-students/xiyuez2" target="_blank" rel="noopener noreferrer">Xiyue Zhu</a> on <a href="#reasoning-aware-vlm">Reasoning-Aware Visual Representation for VLM Agents</a>, developing reasoning-conditioned image re-encoding and a reinforcement-learning pipeline for multi-step visual reasoning.</p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-      <section id="skills" class="content-section" aria-labelledby="skills-title">
-        <h2 id="skills-title">Skills</h2>
-        <div class="skill-groups">
-          <article><h3>Programming</h3><p>Python, C / C++, Java, JavaScript</p></article>
-          <article><h3>Web Development</h3><p>HTML, CSS, responsive design, and basic DOM programming</p></article>
-          <article><h3>Tools</h3><p>Git, GitHub, VS Code, and Linux</p></article>
-          <article><h3>Currently Learning</h3><p>Machine learning, multimodal systems, and agentic AI</p></article>
-        </div>
-      </section>
+        <section id="projects" class="content-section" aria-labelledby="projects-title">
+          <div class="section-title-row">
+            <h2 id="projects-title">Projects</h2>
+            <p>Research and independent work</p>
+          </div>
+          <div class="project-list">
+            <article id="reasoning-aware-vlm" class="project-item">
+              <div class="project-body">
+                <h3>Reasoning-Aware Visual Representation for VLM Agents</h3>
+                <p>Developed a reasoning-conditioned visual encoder that allows VLM agents to dynamically re-encode images as their reasoning evolves. Built zero-initialized ViT adapters and a distributed PPO training pipeline for iterative visual reasoning.</p>
+                <p class="project-meta">Qwen2.5-VL · Vision Transformers · PPO · PyTorch</p>
+                <p class="project-status">UIUC Research · Jan 2026 – Aug 2026</p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-      <section id="projects" class="content-section" aria-labelledby="projects-title">
-        <div class="section-title-row"><h2 id="projects-title">Projects</h2><p>Coursework and independent work</p></div>
-        <div class="project-list">
-          <article class="project-item">
-            <div class="project-image project-image-blue" aria-hidden="true">01</div>
-            <div class="project-body">
-              <h3>Personal Website</h3>
-              <p>A responsive personal homepage built with vanilla HTML, CSS, and JavaScript to document my background, interests, and projects.</p>
-              <p class="project-meta">HTML · CSS · JavaScript</p>
-              <p class="project-status">Repository link will be added after publication.</p>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image project-image-green" aria-hidden="true">02</div>
-            <div class="project-body">
-              <h3>Course Project</h3>
-              <p>Describe the problem, your contribution, and the main result of a course project in two or three specific sentences.</p>
-              <p class="project-meta">Technology One · Technology Two</p>
-              <p class="project-status">Replace this entry with a real project.</p>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image project-image-gray" aria-hidden="true">03</div>
-            <div class="project-body">
-              <h3>Independent Project</h3>
-              <p>Use this space for a small research prototype, developer tool, visualization, or another project that reflects your interests.</p>
-              <p class="project-meta">Technology One · Technology Two</p>
-              <p class="project-status">Replace this entry with a real project.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="content-section contact-section" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <p>I am happy to connect with people interested in multimodal learning, adaptive agents, or student research. Feel free to reach out by email or GitHub.</p>
-        <ul class="contact-list">
-          <li><span>Email</span><a href="mailto:lyujianchen182@gmail.com">lyujianchen182@gmail.com</a></li>
-          <li><span>GitHub</span><a href="https://github.com/Autumn-cyber-aka" target="_blank" rel="noopener noreferrer">github.com/Autumn-cyber-aka</a></li>
-        </ul>
-        <p class="edit-note">Replace these placeholders with your contact details before publishing.</p>
-      </section>
-    </main>
-
-    <footer class="site-footer"><p>© <span data-year></span> Jianchen Lyu · Built with HTML, CSS, and JavaScript</p></footer>
+      </main>
+    </div>
   </body>
 </html>
