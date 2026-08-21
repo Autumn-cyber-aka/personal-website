@@ -1,38 +1,58 @@
-# Personal Homepage
+# Jianchen Lyu — Personal Homepage
 
-A concise academic-style personal website built with vanilla HTML, CSS, and JavaScript.
+Academic personal website for Jianchen Lyu, a Computer Science undergraduate at Columbia University interested in multimodal learning, self-improving agents, continual learning, and reasoning in vision-language models.
 
-## Design
+**Live site:** [https://autumn-cyber-aka.github.io/personal-website/](https://autumn-cyber-aka.github.io/personal-website/)
 
-The site uses a content-first layout, restrained colors, clear sections, and compact project entries. Its typography uses Crimson Pro for primary text and Ubuntu Mono for metadata.
+## Overview
 
-## Local Preview
+The website uses a two-column academic portfolio layout:
 
-Open `index.html` directly in a browser, or run the following command in the project directory:
+- A fixed profile sidebar with a portrait, contact links, and section navigation
+- An About section describing current research interests
+- An Experience section covering Columbia University and a UIUC research internship
+- A Projects section featuring Reasoning-Aware Visual Representation for VLM Agents
+- A responsive single-column layout for smaller screens
+
+The site is built with plain HTML, CSS, and JavaScript. It has no framework, package manager, or build step.
+
+## Research Project
+
+### Reasoning-Aware Visual Representation for VLM Agents
+
+The project explores reasoning-conditioned visual representations that allow vision-language model agents to re-encode images as their reasoning evolves. The current implementation includes zero-initialized Vision Transformer adapters and a distributed PPO training pipeline for iterative visual reasoning.
+
+Technologies: Qwen2.5-VL, Vision Transformers, PPO, and PyTorch.
+
+## Local Development
+
+From the project directory, start a local server:
 
 ```bash
-python3 -m http.server 8000
+python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Then open [http://localhost:8000](http://localhost:8000).
 
-## Before Publishing
+## Project Structure
 
-Replace the following placeholder content in `index.html`:
+```text
+personal-website/
+├── assets/
+│   ├── columbia-seal.png
+│   ├── profile.png
+│   └── uiuc-block-i.svg
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
 
-- Your personal introduction and skills
-- The names, descriptions, and technology stacks of the project entries
-
-Do not add empty project links. When real links are available, use clear labels such as `Code` and `Demo`.
-
-## Files
-
-- `index.html`: Page content and semantic structure
-- `styles.css`: Typography, visual styles, and responsive layout
-- `script.js`: Mobile navigation and active-section state
-- `README.md`: Maintenance and deployment notes
-- `assets/profile.png`: Profile photograph
+- `index.html` contains the page content and semantic structure.
+- `styles.css` defines the fixed-sidebar layout, typography, and responsive behavior.
+- `script.js` updates the active navigation item as the page scrolls.
+- `assets/` contains the profile photo and university marks.
 
 ## Deployment
 
-The project has no build step and can be deployed directly to GitHub Pages, Cloudflare Pages, Netlify, or Vercel.
+The site is deployed with GitHub Pages from the `main` branch and the repository root (`/`). Pushing changes to `main` automatically updates the public website after the Pages deployment finishes.
