@@ -24,15 +24,9 @@ The project explores reasoning-conditioned visual representations that allow vis
 
 Technologies: Qwen2.5-VL, Vision Transformers, PPO, and PyTorch.
 
-## Local Development
+## View the Website
 
-From the project directory, start a local server:
-
-```bash
-python -m http.server 8000
-```
-
-Then open [http://localhost:8000](http://localhost:8000).
+Visit the published website at [autumn-cyber-aka.github.io/personal-website](https://autumn-cyber-aka.github.io/personal-website/).
 
 ## Project Structure
 
