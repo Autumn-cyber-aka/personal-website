@@ -1,31 +1,5 @@
-const menuButton = document.querySelector('.menu-button');
-const navigation = document.querySelector('.site-nav');
 const navigationLinks = [...document.querySelectorAll('.site-nav a')];
 const sections = [...document.querySelectorAll('main section[id]')];
-
-function closeMenu() {
-  if (!menuButton || !navigation) return;
-  menuButton.setAttribute('aria-expanded', 'false');
-  navigation.classList.remove('open');
-  updateMenuLabel(false);
-}
-
-function updateMenuLabel(open) {
-  const label = menuButton?.querySelector('.sr-only');
-  if (label) label.textContent = open ? 'Close navigation menu' : 'Open navigation menu';
-}
-
-menuButton?.addEventListener('click', () => {
-  const open = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!open));
-  navigation?.classList.toggle('open', !open);
-  updateMenuLabel(!open);
-});
-
-navigationLinks.forEach((link) => link.addEventListener('click', closeMenu));
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closeMenu();
-});
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -42,5 +16,3 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
-const year = document.querySelector('[data-year]');
-if (year) year.textContent = new Date().getFullYear();
