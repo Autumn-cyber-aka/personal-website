@@ -53,7 +53,7 @@ The site is deployed with GitHub Pages from the `main` branch and the repository
 
 ## blogs
 
-The sidebar links to `blogs/`, the bilingual writing index.
+The sidebar links to `#blogs`, the bilingual writing section on the homepage. Article titles open their individual pages. The existing `blogs/` URL remains available as an archive.
 
 ### Published posts
 
@@ -62,4 +62,4 @@ The sidebar links to `blogs/`, the bilingual writing index.
 
 Each language has its own static HTML page and links to its translation. The articles share the homepage stylesheet and sidebar, with publication date, author, and a collapsible table of contents.
 
-Markdown files are the editable sources. When changing a post, update its corresponding HTML page as well; this repository does not automatically convert Markdown to HTML. Add new article links to `blogs/index.html` before publishing.
+Markdown files are the editable sources. When changing a post, update its corresponding HTML page as well; this repository does not automatically convert Markdown to HTML. Add new article links to the homepage blogs section and `blogs/index.html` before publishing.
