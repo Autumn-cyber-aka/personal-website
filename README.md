@@ -53,6 +53,13 @@ The site is deployed with GitHub Pages from the `main` branch and the repository
 
 ## blogs
 
-The sidebar links to the independent `blogs/` page for personal reflections. It starts with an honest empty state until the first article is ready.
+The sidebar links to `blogs/`, the bilingual writing index.
 
-To publish a post, add its HTML page in `blogs/` using the shared `../styles.css`, then replace the empty state in `blogs/index.html` with a linked article entry containing the title, date, and a short summary. Keep navigation paths relative so they work under the GitHub Pages repository URL.
+### Published posts
+
+- AI 时代，我为什么开始认真考虑做一个自己的账号 — [中文](blogs/personal-brand-ai-zh.html) / [English](blogs/personal-brand-ai-en.html)
+- Editable Markdown sources: `blogs/posts/personal-brand-ai-zh.md` and `blogs/posts/personal-brand-ai-en.md`.
+
+Each language has its own static HTML page and links to its translation. The articles share the homepage stylesheet and sidebar, with publication date, author, and a collapsible table of contents.
+
+Markdown files are the editable sources. When changing a post, update its corresponding HTML page as well; this repository does not automatically convert Markdown to HTML. Add new article links to `blogs/index.html` before publishing.

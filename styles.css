@@ -208,3 +208,25 @@ h3 { margin: 0; font-size: 1.16rem; line-height: 1.4; }
 .blog-empty h2 { margin-bottom: 12px; font-size: 1.3rem; }
 .blog-empty p { margin: 0; color: var(--muted); font-size: 1rem; }
 .blog-home-link { display: inline-block; margin-top: 28px; font-family: var(--mono); font-size: 0.85rem; text-decoration: none; }
+
+.blog-post-entry { padding: 30px 0; border-block: 1px solid var(--border); }
+.blog-post-entry h2 { margin: 12px 0; font-size: 1.6rem; line-height: 1.5; }
+.blog-post-entry h2 a { color: var(--text); text-decoration: none; }
+.blog-post-entry h2 a:hover { color: var(--link); }
+.blog-post-entry > p { font-size: 1rem; }
+.blog-post-translation a { color: var(--muted); text-decoration: none; }
+.article-meta { color: var(--muted); font-family: var(--mono); font-size: 0.85rem; }
+.language-switch { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; font-family: var(--mono); font-size: 0.9rem; }
+.language-switch a[aria-current="page"] { color: var(--text); font-weight: bold; text-decoration: none; }
+.article-page { padding-bottom: 64px; }
+.article-heading .blog-home-link { margin-top: 0; }
+.article-heading h1 { margin: 24px 0; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.35; }
+.article-summary { color: var(--muted); }
+.article-toc { margin: 32px 0; padding: 16px 0; border-block: 1px solid var(--border); }
+.article-toc summary { cursor: pointer; }
+.article-toc ol { padding-left: 24px; }
+.article-toc li { margin: 8px 0; }
+.article-prose { line-height: 1.85; overflow-wrap: anywhere; }
+.article-prose p { margin: 0 0 24px; }
+.article-prose h2 { margin: 48px 0 22px; font-size: 1.6rem; scroll-margin-top: 24px; }
+.article-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
