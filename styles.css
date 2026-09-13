@@ -78,7 +78,7 @@ a:hover { color: var(--link-dark); }
 
 h1, h2, h3, p { overflow-wrap: break-word; }
 
-h1 {
+h1, .profile-name {
   margin: 0 0 4px;
   font-family: var(--serif);
   font-size: 2rem;
@@ -198,3 +198,13 @@ h3 { margin: 0; font-size: 1.16rem; line-height: 1.4; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Independent writing index, sharing the homepage sidebar and palette. */
+.blog-page { padding-bottom: 64px; }
+.blog-heading { padding: 8px 0 34px; }
+.blog-heading h1 { margin: 0 0 18px; font-size: clamp(2.5rem, 5vw, 3.5rem); }
+.blog-intro { margin: 0; color: var(--muted); font-size: 1rem; }
+.blog-empty { padding: 48px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.blog-empty h2 { margin-bottom: 12px; font-size: 1.3rem; }
+.blog-empty p { margin: 0; color: var(--muted); font-size: 1rem; }
+.blog-home-link { display: inline-block; margin-top: 28px; font-family: var(--mono); font-size: 0.85rem; text-decoration: none; }

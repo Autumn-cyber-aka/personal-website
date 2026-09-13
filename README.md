@@ -50,3 +50,9 @@ personal-website/
 ## Deployment
 
 The site is deployed with GitHub Pages from the `main` branch and the repository root (`/`). Pushing changes to `main` automatically updates the public website after the Pages deployment finishes.
+
+## blogs
+
+The sidebar links to the independent `blogs/` page for personal reflections. It starts with an honest empty state until the first article is ready.
+
+To publish a post, add its HTML page in `blogs/` using the shared `../styles.css`, then replace the empty state in `blogs/index.html` with a linked article entry containing the title, date, and a short summary. Keep navigation paths relative so they work under the GitHub Pages repository URL.
