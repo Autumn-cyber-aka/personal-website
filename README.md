@@ -11,7 +11,7 @@ The website uses a two-column academic portfolio layout:
 - A fixed profile sidebar with a portrait, contact links, and section navigation
 - An About section describing current research interests
 - An Experience section covering Columbia University and a UIUC research internship
-- A Projects section featuring Reasoning-Aware Visual Representation for VLM Agents
+- A Projects section featuring Reasoning-Aware Visual Representation for VLM Agents and PaperRank
 - A responsive single-column layout for smaller screens
 
 The site is built with plain HTML, CSS, and JavaScript. It has no framework, package manager, or build step.
@@ -23,6 +23,12 @@ The site is built with plain HTML, CSS, and JavaScript. It has no framework, pac
 The project explores reasoning-conditioned visual representations that allow vision-language model agents to re-encode images as their reasoning evolves. The current implementation includes zero-initialized Vision Transformer adapters and a distributed PPO training pipeline for iterative visual reasoning.
 
 Technologies: Qwen2.5-VL, Vision Transformers, PPO, and PyTorch.
+
+### PaperRank — Scientific Evidence Search
+
+An AI-assisted independent learning project comparing BM25, MiniLM semantic retrieval, reciprocal rank fusion, and a trained pairwise reranker over 5,183 BEIR SciFact abstracts. The React/TypeScript interface runs search in the browser using exported model assets and ONNX Runtime. Evaluation uses held-out queries; the project does not claim that the trained reranker improves retrieval quality.
+
+The homepage links to the owner-private Sites demo and private GitHub repository, with access restrictions explicitly labeled. Adding this portfolio entry does not change either project's sharing permissions.
 
 ## View the Website
 
